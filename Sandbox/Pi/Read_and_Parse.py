@@ -1,4 +1,4 @@
-import pyserial, numpy
+import serial, numpy
 
 arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=.1)
 
