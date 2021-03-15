@@ -47,7 +47,7 @@ class Logger:
                 
 
     @staticmethod
-    def remove_bad_chars(self, string: str) -> str:
+    def remove_bad_chars(string: str) -> str:
         for char in string:
             if char in r'\/:*?"<>|':
                 string = string.replace(char, '')

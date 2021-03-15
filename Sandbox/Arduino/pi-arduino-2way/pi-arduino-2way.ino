@@ -24,8 +24,8 @@ void loop(){
     ALTITUDE = temp.toFloat();
     temp = Serial.readStringUntil('\n');
     MODE = temp.toInt();
-    Serial.print(String(DEPTH));
-    Serial.print(String(ALTITUDE));
+    Serial.print(String(DEPTH) + ',');
+    Serial.print(String(ALTITUDE) + ',');
     Serial.println(String(MODE));
   }
 }

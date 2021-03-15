@@ -1,4 +1,5 @@
 import serial
+import time
 
 import csv_logger
 
@@ -18,6 +19,14 @@ arduino.flush()
 
 # Infinite loop
 while True:
+        send_string = ("50,10,3 \n")
+
+        # Send the string. Make sure you encode it before you send it to the Arduino.
+        arduino.write(send_string.encode('utf-8'))
+
+        # Do nothing for 500 milliseconds (0.5 seconds)
+        time.sleep(0.1)
+
         # Read until new line char and convert byte data into string, and log into csv
         line = arduino.readline().decode('utf-8').rstrip()
         log.log_row(line)

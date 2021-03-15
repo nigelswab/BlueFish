@@ -27,6 +27,13 @@
    2015/MAR/03  - First release (KTOWN)
    2015/AUG/27  - Added calibration and system status helpers
 */
+/*GLOBAL VARIABLES*/
+volatile unsigned int DEPTH;     // depth for hold depth mode [m]
+volatile unsigned int ALTITUDE;  // altititude for hold altidtude mode [m]
+volatile int MODE;               // 1 = dive
+                                 // 2 =  constant_depth
+                                 // 3 =  constant_altitude
+                                 // 4 = surface
 
 /* Set the delay between fresh samples */
 #define BNO055_SAMPLERATE_DELAY_MS (100)
@@ -78,7 +85,10 @@ void displaySensorStatus(void)
   Serial.print("System Error:  0x");
   Serial.println(system_error, HEX);
   Serial.println("");
+  Serial.print(Serial.available());
   delay(500);
+  
+  
 }
 
 /**************************************************************************/
@@ -111,6 +121,18 @@ void displayCalStatus(void)
   Serial.print(accel, DEC);
   Serial.print(" M:");
   Serial.print(mag, DEC);
+
+  if(Serial.available() > 0) {
+    String temp = Serial.readStringUntil(',');
+    DEPTH = temp.toFloat();
+    temp = Serial.readStringUntil(',');
+    ALTITUDE = temp.toFloat();
+    temp = Serial.readStringUntil('\n');
+    MODE = temp.toInt();
+    Serial.print("D = " + String(DEPTH) + ',');
+    Serial.print(" A = " + String(ALTITUDE) + ',');
+    Serial.println(" M = " + String(MODE));
+  }
 }
 
 /**************************************************************************/
