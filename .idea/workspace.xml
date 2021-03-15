@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="021cb13d-3ff6-41cb-88f5-40a4f7f2aa72" name="Default Changelist" comment="" />
+    <list default="true" id="021cb13d-3ff6-41cb-88f5-40a4f7f2aa72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Pi/Read_and_Parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Pi/Read_and_Parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Pi/csv_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Pi/csv_logger.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

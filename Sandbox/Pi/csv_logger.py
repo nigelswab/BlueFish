@@ -1,9 +1,5 @@
 import os
-import serial
-import time
-import csv
 from datetime import datetime
-
 
 
 class Logger:
@@ -49,7 +45,8 @@ class Logger:
         #write data with a new line
         self.file.write(data + "\n") 
                 
-    
+
+    @staticmethod
     def remove_bad_chars(self, string: str) -> str:
         for char in string:
             if char in r'\/:*?"<>|':

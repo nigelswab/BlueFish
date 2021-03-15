@@ -1,8 +1,4 @@
-import os
 import serial
-import time
-import csv
-from datetime import datetime
 
 import csv_logger
 
@@ -22,7 +18,6 @@ arduino.flush()
 
 # Infinite loop
 while True:
-    
         # Read until new line char and convert byte data into string, and log into csv
         line = arduino.readline().decode('utf-8').rstrip()
         log.log_row(line)
