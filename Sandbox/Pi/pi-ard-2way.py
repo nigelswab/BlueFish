@@ -15,7 +15,7 @@ arduino.flush()
 
 # Infinite loop
 while (1):
-    send_string = ("My name is Raspberry Pi\n")
+    send_string = ("50,5,2 \n")
 
     # Send the string. Make sure you encode it before you send it to the Arduino.
     arduino.write(send_string.encode('utf-8'))

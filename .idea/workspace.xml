@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021cb13d-3ff6-41cb-88f5-40a4f7f2aa72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sandbox/Pi/pi-ard-2way.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Arduino/pi-arduino-2way/pi-arduino-2way.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Arduino/pi-arduino-2way/pi-arduino-2way.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/Pi/pi-ard-2way.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/Pi/pi-ard-2way.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
